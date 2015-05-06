@@ -1,0 +1,9 @@
+#include <iostream>
+using namespace std;
+
+int main ()
+{
+    cout <<"Hello programming class"<< endl; // this line is to print that text
+
+    /*Comment is to say what you are doing in a program but a comment does not do nothing. 
+}
