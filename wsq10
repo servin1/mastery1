@@ -1,0 +1,12 @@
+#include <iostream>
+using namespace std;
+
+int main () {
+
+string nombre;
+
+cout <<"tell me your name "; cin >> nombre;
+cout <<"Your names is: "<<nombre<<""<< endl;
+
+return 0;
+}
