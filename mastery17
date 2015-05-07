@@ -1,0 +1,142 @@
+#include <iostream>
+using namespace std;
+
+int main () { //Ponerle siwtch case dentro de los case y if i elses tambien jeje!!!! yujuuu!!! amonos!
+
+int product, corns, drink, ice, chocolate, age, chocolate2;
+
+cout <<"Hello! press the number \n 1 pop corns \n 2 drink \n 3 ice cream \n 4 chocolate \n"; cin >> product;
+
+switch (product) {
+   case 1:
+     cout <<"press the number \n 1 small pop corns \n 2 medium pop corns \n 3 big pop corns \n"; cin >> corns;
+     switch (corns) {
+       case 1:
+       cout <<"You will pay 20 pesos,enjoy the movie"<< endl;
+       break;
+
+       case 2:
+       cout <<"You will pay 30 pesos,enjoy the movie"<< endl;
+       break;
+
+       case 3:
+       cout <<"You will pay 40 pesos,enjoy the movie"<< endl;
+       break;
+
+       default:
+       cout <<"This number is invalid"<< endl;
+     }
+     break;
+
+   case 2:
+     cout <<"Tell me your age to tell you the drinks for you \n "; cin >> age;
+     if(age > 18){
+       cout <<"press the number \n 1 coffee \n 2 energetic drink \n 3 Tejuino "; cin >> drink;
+       switch (drink) {
+         case 1:
+         cout <<"Thanks, enjoy your coffee"<< endl;
+         break;
+
+         case 2:
+         cout <<"Becareful with this drink!!!"<< endl;
+         break;
+
+         case 3:
+         cout <<"Enjoy your tejuino!"<< endl;
+         break;
+
+         default:
+         cout <<"This number is invalid" << endl;
+       } //this is for the switch
+     } //This is for the if
+
+     else {
+       if (age <= 18) {
+         cout <<"press the number \n 1 chocolate \n 2 orange juice \n 3 soda \n "; cin >> drink;
+         switch (drink) {
+           case 1:
+           cout <<"press the number \n 1 chocolate with cockies \n 2 chocolate with a bread \n 3 just chocolate "; cin >> chocolate2;
+           switch (chocolate2){
+             case 1:
+             cout <<"excelent decision my friend!"<< endl;
+             break;
+
+             case 2:
+             cout <<"Delicious!"<< endl;
+             break;
+
+             case 3:
+             cout <<"enjoy it!"<< endl;
+             break;
+
+             default:
+             cout <<"This number is invalid" << endl;
+             break;
+           }
+           break;
+
+           case 2:
+           cout <<"Delicious drink!!!"<< endl;
+           break;
+
+           case 3:
+           cout <<"Enjoy your soda!!!"<< endl;
+           break;
+
+           default:
+           cout <<"This number is invalid"<< endl;
+           break;
+
+         } //this for the switch
+       } //this is for if
+     } //this is for else
+     break;
+
+
+   case 3:
+     cout <<"press the number \n 1 nut ice cream \n 2 chocolate ice cream \n 3 vainilla ice cream "; cin >> ice;
+     switch (ice) {
+      case 1:
+      cout <<"delicious ice cream"<< endl;
+      break;
+
+      case 2:
+      cout <<"nice ice cream!!!"<< endl;
+      break;
+
+      case 3:
+      cout <<"good ice creasm"<< endl;
+      break;
+
+      default:
+      cout <<"This number is invalid"<< endl;
+     }
+     break;
+
+
+  case 4:
+    cout <<"press the number \n 1 small chocolate \n 2 medium chocolate \n 3 big chocolate "; cin >> chocolate;
+    switch (chocolate) {
+      case 1:
+      cout <<"Hope you like it"<< endl;
+      break;
+
+      case 2:
+      cout <<"This size will be enough for you!"<< endl;
+      break;
+
+      case 3:
+      cout <<"You have to finish it!"<< endl;
+      break;
+
+      default:
+      cout <<"This number is invalid"<< endl;
+    }
+    break;
+
+    default:
+    cout <<"This number is invalid"<< endl;
+
+}
+ return 0;
+}
